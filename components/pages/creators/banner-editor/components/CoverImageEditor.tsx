@@ -1,6 +1,6 @@
 import React, { useRef, useCallback, memo } from 'react';
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button } from '@nextui-org/react';
-import { Pencil } from 'lucide-react';
+import { HiOutlinePencil } from "react-icons/hi2";
 import { CoverImageEditorProps } from '../types';
 import { DEFAULT_IMAGE, ACCEPTED_IMAGE_TYPES } from '../utils/constants';
 import { useImageEditor } from '../hooks/useImageEditor';
@@ -71,7 +71,7 @@ export const CoverImageEditor: React.FC<CoverImageEditorProps> = ({
           className="absolute top-4 right-4 bg-light3 border border-primary200 hover:bg-primary50 hover:border-purple-500 rounded-lg text-gray4 text-xs"
           color="primary"
           variant="flat"
-          startContent={<Pencil size={16} />}
+          startContent={<HiOutlinePencil size={16} />}
         >
           Edit cover
         </Button>
